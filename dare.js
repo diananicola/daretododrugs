@@ -23,9 +23,10 @@ function isElementInViewport(element) {
   window.addEventListener('resize', handleScroll);
   handleScroll();
 
-  
-
-
+  window.addEventListener("load", () => {
+    const videoTitle = document.getElementById("videoTitle");
+    videoTitle.style.opacity = 1;
+  });
   
   
   
